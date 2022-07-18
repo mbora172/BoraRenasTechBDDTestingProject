@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/main/resources",
-        glue = "stepDefinitions",dryRun = false,
+        glue = "stepDefinitions",
+        dryRun = false,
         tags = "",//@smoke-everyday(weed) @regression-everySprintMigration
 plugin = {"pretty",
 "json:target/cucumber.json",
