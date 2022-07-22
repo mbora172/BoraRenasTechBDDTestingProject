@@ -13,19 +13,12 @@ public class ConfigurationReader {
         FileInputStream fileInputStream= null;
         try {
             fileInputStream = new FileInputStream("configuration.properties");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        config=new Properties();
-        try {
+            config=new Properties();
             config.load(fileInputStream);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        try {
             fileInputStream.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch(Exception e){
+            System.out.println("Failed to load the properties");
+            e.printStackTrace();
         }
     }
 public static String getProperties(String str){ return config.getProperty(str);}

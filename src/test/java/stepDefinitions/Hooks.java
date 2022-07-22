@@ -12,7 +12,7 @@ public class Hooks extends Base {
 @Before
     public void setup(){
     Driver.getDriver();
-    Base.waitImplicit();
+    waitImplicit();
     Driver.getDriver().manage().window().maximize();
 }
 

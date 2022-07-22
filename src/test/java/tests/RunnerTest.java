@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/main/resources",
+@CucumberOptions(features = "src/test/resources",
         glue = "stepDefinitions",
         dryRun = false,
         tags = "",//@smoke-everyday(weed) @regression-everySprintMigration
