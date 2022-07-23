@@ -5,8 +5,8 @@ def slackChannelID = 'C03NE82PLMQ'
 pipeline {
   agent any
   tools {
-    maven 'Maven 3.8.6'
-    jdk 'jd11'
+    maven 'MAVEN'
+    jdk 'JDK'
   }
   triggers{
     cron 'H 2,16 * * *'
