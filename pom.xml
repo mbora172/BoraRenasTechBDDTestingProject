@@ -98,7 +98,7 @@
                     <forkCount>2C</forkCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <includes>
-                        <include>**/TestRunner*.java</include>
+                        <include>**/*Test*.java</include>
                     </includes>
                 </configuration>
             </plugin>
